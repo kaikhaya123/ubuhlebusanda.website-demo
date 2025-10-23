@@ -15,14 +15,18 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { name, email, message, subject, hp } = body as ContactPayload;
 
+    // Honeypot check
     if (hp && hp.trim().length > 0) return NextResponse.json({ ok: true });
+
+    // Validation
     if (!email || !message) return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
 
+    // Create transporter for GoDaddy
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,
-      port: Number(process.env.SMTP_PORT),
-      secure: false,
-      requireTLS: true,
+      host: process.env.SMTP_HOST,          // smtp.secureserver.net
+      port: Number(process.env.SMTP_PORT),  // 587
+      secure: false,                        // STARTTLS
+      requireTLS: true,                     // enforce TLS upgrade
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASS,
@@ -30,8 +34,6 @@ export async function POST(req: NextRequest) {
       connectionTimeout: 10000,
       greetingTimeout: 5000,
       socketTimeout: 10000,
-      logger: true,
-      debug: true,
     });
 
     const info = await transporter.sendMail({
