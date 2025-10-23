@@ -1,15 +1,6 @@
-<<<<<<< HEAD
 {
   "extends": ["next/core-web-vitals"],
   "rules": {
     "react/react-in-jsx-scope": "off"
   }
 }
-=======
-{
-  "extends": ["next/core-web-vitals"],
-  "rules": {
-    "react/react-in-jsx-scope": "off"
-  }
-}
->>>>>>> 139fe18 (Initial commit with pages folder)
