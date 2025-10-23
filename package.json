@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "framer-motion": "^12.23.24"
+    "framer-motion": "^12.23.24",
+    "next": "^14.2.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "scripts": {
+    "dev": "next dev"
   }
 }
