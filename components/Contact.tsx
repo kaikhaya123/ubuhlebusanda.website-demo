@@ -1,4 +1,6 @@
-"use client"
+import React, { useState, useEffect, useRef } from 'react'
+
+
 // Helper component to load Lottie animation from public folder
 function SuccessLottie() {
   const [animationData, setAnimationData] = React.useState<any>(null);
@@ -26,8 +28,6 @@ function SuccessLottie() {
     </motion.div>
   );
 }
-"use client"
-import React, { useState, useEffect, useRef } from 'react'
 import { UserIcon, EnvelopeIcon, PencilSquareIcon, PhoneIcon, MapPinIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
 import { motion, AnimatePresence } from 'framer-motion'
 import Lottie from 'react-lottie-player'
