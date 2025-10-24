@@ -7,3 +7,10 @@ dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore build cache and output
+.next/cache/
+.next/server/
+out/
+coverage/
+logs/

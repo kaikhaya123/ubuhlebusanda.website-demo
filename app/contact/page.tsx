@@ -1,13 +1,23 @@
+
 "use client";
-import contactLottie from '../../Public/lottie/Contact.json';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-// Removed incorrect import from Downloads. Only using Public/lottie import for Ubuhlebusanda animation.
-import ubuhlebusandaAnimation from '../../Public/lottie/Ubuhlebusanda animation.json';
-import React, { useState } from 'react';
 import Image from 'next/image';
 import EnvelopeIcon from '@heroicons/react/24/solid/EnvelopeIcon';
 import PhoneIcon from '@heroicons/react/24/solid/PhoneIcon';
 import Lottie from 'react-lottie-player';
+
+// Custom hook to fetch lottie JSON from public folder
+function useLottieData(path: string) {
+  const [data, setData] = useState<any>(null);
+  useEffect(() => {
+    fetch(path)
+      .then(res => res.json())
+      .then(setData)
+      .catch(() => setData(null));
+  }, [path]);
+  return data;
+}
 
 export default function ContactPage() {
   const [firstName, setFirstName] = useState('');
@@ -16,6 +26,8 @@ export default function ContactPage() {
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState<'idle'|'sending'|'success'|'error'>('idle');
   const [error, setError] = useState<string | null>(null);
+  const contactLottie = useLottieData('/lottie/Contact.json');
+  const emailSentLottie = useLottieData('/lottie/Email Sent.json');
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -145,7 +157,7 @@ export default function ContactPage() {
             <div className="bg-white/95 rounded-3xl shadow-2xl p-10 flex flex-col items-center animate-fade-in" style={{ minWidth: 320, border: 'none' }}>
               <Lottie
                 loop={false}
-                animationData={require('../../Public/lottie/Email Sent.json')}
+                animationData={emailSentLottie}
                 play
                 style={{ width: 140, height: 140, marginBottom: 18 }}
               />
