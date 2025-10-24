@@ -124,8 +124,8 @@ const [hoveredSide, setHoveredSide] = useState<'left' | 'right' | null>(null)
 
 ### Background Images
 ```
-Left: /Images/pexels-lisa-anna-901356985-19866477.jpg (Kitchen)
-Right: /Images/pexels-tima-miroshnichenko-7033665.jpg (Commercial)
+Left: /images/pexels-lisa-anna-901356985-19866477.jpg (Kitchen)
+Right: /images/pexels-tima-miroshnichenko-7033665.jpg (Commercial)
 ```
 
 ### Electrical Line SVG

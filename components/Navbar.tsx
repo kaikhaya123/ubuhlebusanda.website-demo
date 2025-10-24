@@ -131,9 +131,9 @@ export default function Navbar(){
   <Link href="/" onClick={handleLogoClick} className="inline-flex items-center gap-3 px-3 py-1 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300" aria-label="Ubuhlebusanda home">
           <span className="sr-only">Ubuhlebusanda</span>
           {/* keep navbar height small while visually enlarging the logo, especially on mobile */}
-          <div className="relative w-56 sm:w-72 md:w-96 h-24 sm:h-20 md:h-24 overflow-visible">
+          <div className="relative w-32 sm:w-56 md:w-72 h-16 sm:h-20 md:h-24 overflow-visible mt-0">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full h-full overflow-visible -translate-y-1 transform scale-[2] sm:scale-[1.7] md:scale-[1.9]">
+              <div className="w-full h-full overflow-visible transform scale-100 sm:scale-[1.2] md:scale-[1.4]">
                 <Image
                   src="/images/chatgpt-2025-09-29-08-16-40.png"
                   alt="Ubuhlebusanda logo"

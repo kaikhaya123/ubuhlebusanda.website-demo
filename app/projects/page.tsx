@@ -45,7 +45,7 @@ const projects: Project[] = [
   '/images/app01.webp',
   '/images/4_72982bd1-9ce9-4b87-8844-f14a4ea9dbc5_535x.webp',
   '/images/LUXPOWER-SNA-US-12000-Hybrid-Off-Grid-Inverter-1.png',
-      '/Images/3_6a3f8f37-ea77-4911-9c98-0ffcb8428cd5.webp'
+      '/images/3_6a3f8f37-ea77-4911-9c98-0ffcb8428cd5.webp'
     ],
     videoUrl: "/videos/ssstik.io_@siyanda_24_1759239017612.mp4",
     challenge: 'Installing a complex electrical system while maintaining safety standards and meeting tight deadlines.',
@@ -63,12 +63,12 @@ const projects: Project[] = [
     description: 'Solar power system installation for sustainable energy solutions.',
     location: '',
     date: '',
-    coverImage: '/Images/img01.jpg',
+    coverImage: '/images/img01.jpg',
     images: [
-      '/Images/newpowa-0jf8n9COg6s-unsplash.jpg',
-      '/Images/pexels-cristian-rojas-8853503.jpg',
-      '/Images/pexels-cristian-rojas-8853511.jpg',
-      '/Images/pexels-cristian-rojas-8853540.jpg'
+      '/images/newpowa-0jf8n9COg6s-unsplash.jpg',
+      '/images/pexels-cristian-rojas-8853503.jpg',
+      '/images/pexels-cristian-rojas-8853511.jpg',
+      '/images/pexels-cristian-rojas-8853540.jpg'
     ],
     videoUrl: "/videos/ssstik.io_@siyanda_24_1759238335036.mp4",
     challenge: 'Optimizing solar panel placement for maximum efficiency in limited roof space.',
@@ -86,12 +86,12 @@ const projects: Project[] = [
     description: 'Premium Lorenzetti product installation and setup.',
     location: '',
     date: '',
-    coverImage: '/Images/Lorenzetti Shower Installation.jpg',
+    coverImage: '/images/Lorenzetti Shower Installation.jpg',
     images: [
-      '/Images/Lorenzetti Shower Installation.jpg',
-      '/Images/Bello-Shower-600x900.webp',
-      '/Images/LOR7698-2-002-scaled.jpg',
-      '/Images/5c014ea2990d1137c97cd9368ae13d9f.jpg'
+      '/images/Lorenzetti Shower Installation.jpg',
+      '/images/Bello-Shower-600x900.webp',
+      '/images/LOR7698-2-002-scaled.jpg',
+      '/images/5c014ea2990d1137c97cd9368ae13d9f.jpg'
     ],
     videoUrl: "/videos/snaptik_7346607726019104006_v2.mp4",
     challenge: 'Integrating modern Lorenzetti systems with existing plumbing infrastructure.',
@@ -109,12 +109,12 @@ const projects: Project[] = [
     description: 'Full-scale home renovation including electrical upgrades, modern lighting, and smart home integration.',
     location: '',
     date: '',
-    coverImage: '/Images/premium_photo-1683121250314-f5e3bb80aa75.avif',
+    coverImage: '/images/premium_photo-1683121250314-f5e3bb80aa75.avif',
     images: [
-  '/Images/condos-08.jpg',
-  // '/Images/pexels-vlada-karpovich-6634838.jpg', // Removed: invalid or missing image
-  '/Images/pexels-heyho-6489127.jpg',
-      '/Images/woodupp-tv-mount-akupanel-beige-felt-880x1024.jpg'
+  '/images/condos-08.jpg',
+  // '/images/pexels-vlada-karpovich-6634838.jpg', // Removed: invalid or missing image
+  '/images/pexels-heyho-6489127.jpg',
+      '/images/woodupp-tv-mount-akupanel-beige-felt-880x1024.jpg'
     ],
     challenge: 'Modernizing an older home while preserving its character and ensuring all systems meet current safety standards.',
     solution: 'Phased renovation approach with careful planning to maintain structural integrity while upgrading all electrical systems and adding modern amenities.',
@@ -132,7 +132,7 @@ const projects: Project[] = [
     description: 'New commercial building construction with complete electrical infrastructure and modern lighting systems.',
     location: '',
     date: '',
-    coverImage: '/Images/premium_photo-1681989486976-9ec9d2eac57a.jpeg',
+    coverImage: '/images/premium_photo-1681989486976-9ec9d2eac57a.jpeg',
     images: [],
     challenge: 'Building a modern commercial facility from the ground up with comprehensive electrical systems, energy-efficient lighting, and future-ready infrastructure.',
     solution: 'Implemented advanced electrical planning with modular systems, energy-efficient LED lighting throughout, and infrastructure for future technology upgrades.',
@@ -174,7 +174,7 @@ export default function ProjectsPage() {
       <HeroSimple
         title="Our Projects"
         sub="Explore our portfolio of successful installations and transformations across South Africa."
-        bg="/Images/pexels-bizar-van-jan-92378004-16427010.jpg"
+        bg="/images/pexels-bizar-van-jan-92378004-16427010.jpg"
         ctaText="View All Projects"
         ctaHref="#projects"
       />

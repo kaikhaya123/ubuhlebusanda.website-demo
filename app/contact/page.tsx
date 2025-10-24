@@ -65,7 +65,7 @@ export default function ContactPage() {
         <div className="absolute inset-0" />
         <div className="relative z-20 flex flex-col items-center justify-center text-center w-full">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">Get In Touch</h1>
-          <span className="inline-block bg-white text-blue-600 font-semibold px-4 py-1 rounded-full shadow mb-4">WRITE TO US</span>
+          <span className="inline-block bg-white text-black font-semibold px-4 py-1 rounded-full shadow mb-4">WRITE TO US</span>
           <p className="text-white text-lg md:text-xl font-medium mb-2">Please fill out the form below or reach us directly for quotes, questions, or service requests.</p>
         </div>
       </section>
@@ -138,7 +138,7 @@ export default function ContactPage() {
             <button type="submit" className="w-full py-3 px-6 rounded-md font-extrabold bg-black text-white shadow-lg hover:bg-gray-900 transition uppercase tracking-wide">SEND MESSAGE</button>
       {/* Animated feedback for sending, success, and error */}
       {status === 'sending' && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-100/60 via-amber-100/40 to-white/80 backdrop-blur-xl">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-blue-100/60 via-gray-100/40 to-white/80 backdrop-blur-xl">
             <div className="bg-white/95 rounded-3xl shadow-2xl p-10 flex flex-col items-center animate-fade-in" style={{ minWidth: 320, border: 'none' }}>
               <Lottie
                 loop={true}
@@ -153,7 +153,7 @@ export default function ContactPage() {
           </div>
       )}
       {status === 'success' && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-green-100/60 via-amber-100/40 to-white/80 backdrop-blur-xl">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-green-100/60 via-gray-100/40 to-white/80 backdrop-blur-xl">
             <div className="bg-white/95 rounded-3xl shadow-2xl p-10 flex flex-col items-center animate-fade-in" style={{ minWidth: 320, border: 'none' }}>
               <Lottie
                 loop={false}
@@ -168,7 +168,7 @@ export default function ContactPage() {
           </div>
       )}
       {status === 'error' && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-red-400/40 via-pink-300/30 to-yellow-400/30 backdrop-blur-xl">
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-gradient-to-br from-red-400/40 via-pink-300/30 to-white/30 backdrop-blur-xl">
             <div className="bg-white/90 rounded-2xl shadow-2xl p-10 flex flex-col items-center glass-card animate-fade-in" style={{ border: 'none' }}>
               <svg className="mb-4" width="48" height="48" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#ef4444" strokeWidth="4"/><line x1="8" y1="8" x2="16" y2="16" stroke="#ef4444" strokeWidth="2"/><line x1="16" y1="8" x2="8" y2="16" stroke="#ef4444" strokeWidth="2"/></svg>
               <div className="text-xl font-extrabold text-black tracking-wide mb-2 drop-shadow">{error}</div>

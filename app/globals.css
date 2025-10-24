@@ -127,8 +127,8 @@ html{
 
 /* Mobile fallback: slightly stronger filled accent for visibility on small screens */
 @media (max-width: 640px){
-	.btn-glass{ background: #ffd700; color: #0b0b0b; border-color: transparent; }
-	.btn-glass--warm{ background: #f0c300; color: #0b0b0b; border-color: transparent; }
+	.btn-glass{ background: #fff; color: #0b0b0b; border-color: transparent; }
+	.btn-glass--warm{ background: #fff; color: #0b0b0b; border-color: transparent; }
 }
 
 /* Fade-in animation for hero features */
