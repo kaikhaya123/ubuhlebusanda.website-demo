@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export const viewport = {
-  themeColor: '#F59E0B', // amber-500 to match your theme
+  themeColor: '#ffffff', // Set to white for neutral background
   width: 'device-width',
   initialScale: 1
 };
@@ -14,7 +14,7 @@ export const metadata = {
   description: 'Trusted electrical installations and Lorenzetti product solutions across South Africa.',
   icons: {
     icon: [
-      { url: '/Images/chatgpt-2025-09-29-08-16-40.png' },
+  { url: '/images/chatgpt-2025-09-29-08-16-40.png' },
       { url: '/favicon/favicon.ico' },
     ],
   },

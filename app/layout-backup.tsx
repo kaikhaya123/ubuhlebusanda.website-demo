@@ -24,19 +24,19 @@ export const metadata = {
   metadataBase: new URL('https://ubuhlebusanda.co.za'),
   icons: {
     icon: [
-      { url: '/Images/chatgpt-2025-09-29-08-16-40.png' },
+  { url: '/images/chatgpt-2025-09-29-08-16-40.png' },
       { url: '/favicon/favicon.ico' },
       { url: '/favicon/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
     apple: [
-      { url: '/Images/chatgpt-2025-09-29-08-16-40.png' },
+  { url: '/images/chatgpt-2025-09-29-08-16-40.png' },
       { url: '/favicon/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
     ],
     other: [
-      { url: '/Images/chatgpt-2025-09-29-08-16-40.png' },
-      { url: '/Images/chatgpt-2025-09-29-08-16-40.png', sizes: '192x192', type: 'image/png' },
-      { url: '/Images/chatgpt-2025-09-29-08-16-40.png', sizes: '512x512', type: 'image/png' },
+  { url: '/images/chatgpt-2025-09-29-08-16-40.png' },
+  { url: '/images/chatgpt-2025-09-29-08-16-40.png', sizes: '192x192', type: 'image/png' },
+  { url: '/images/chatgpt-2025-09-29-08-16-40.png', sizes: '512x512', type: 'image/png' },
     ],
   },
   manifest: '/favicon/site.webmanifest',
@@ -45,7 +45,7 @@ export const metadata = {
     description: 'Trusted electrical installations and Lorenzetti product solutions.',
     images: [
       {
-        url: '/Images/chatgpt-2025-09-29-08-16-40.png',
+  url: '/images/chatgpt-2025-09-29-08-16-40.png',
         width: 1200,
         height: 630,
         alt: 'Ubuhlebusanda Pty Ltd',
@@ -57,7 +57,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Ubuhlebusanda Pty Ltd',
     description: 'Trusted electrical installations and Lorenzetti product solutions.',
-    images: ['/Images/chatgpt-2025-09-29-08-16-40.png'],
+  images: ['/images/chatgpt-2025-09-29-08-16-40.png'],
   },
   appleWebApp: {
     capable: true,
