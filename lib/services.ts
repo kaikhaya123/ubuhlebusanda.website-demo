@@ -7,9 +7,9 @@ export type Service = {
 
 export const services: Service[] = [
   {slug: 'electrical-installations', title:'Electrical Installations', img:'/images/484807011_1060048006163645_9082220095922664128_n.jpg', desc: 'Supply and install wiring, switchgear and lighting for homes and businesses. We handle domestic, commercial and industrial wiring with certified electricians and compliant materials.'},
-  {slug: 'maintenance-repairs', title:'Maintenance & Repairs', img:'/images/electrical-repairs-maintenance-banner-image.png', desc: 'Rapid troubleshooting, repairs and ongoing maintenance plans. We offer scheduled maintenance contracts to keep your installations safe and reliable.'},
+  {slug: 'maintenance-repairs', title:'Maintenance & Repairs', img:'/images/Electrical-Repairs-Maintenance-Banner-Image.png', desc: 'Rapid troubleshooting, repairs and ongoing maintenance plans. We offer scheduled maintenance contracts to keep your installations safe and reliable.'},
   {slug: 'lorenzetti', title:'Lorenzetti Supply & Install', img:'/images/natalia-menin-kvNXrgbmCGM-unsplash.jpg', desc: 'Certified Lorenzetti product supply and professional installation. We are authorized to supply and install Lorenzetti showers and water heating solutions.'},
-  {slug: 'consultation-assessments', title:'Consultation & Assessments', img:'/images/electric-services.jpg', desc: 'Site assessments, safety reports and tailored quotes. We provide comprehensive reports and recommendations for compliance and efficiency improvements.'},
+  {slug: 'consultation-assessments', title:'Consultation & Assessments', img:'/images/ad541d_810b2d0e334d4736a78222bd0d373c25~mv2.avif', desc: 'Site assessments, safety reports and tailored quotes. We provide comprehensive reports and recommendations for compliance and efficiency improvements.'},
   {slug: 'renovation', title:'Renovation', img:'/images/pexels-metalier-coatings-3515111-5252538.jpg', desc: 'Full electrical fit-outs for new builds and renovations. We coordinate with builders and trades to deliver turnkey electrical packages.'},
   {slug: 'plumbing', title:'Plumbing', img:'/images/jacek-dylag-Vve7XkiUq_Y-unsplash (2).jpg', desc: 'Trusted plumbing and carpentry partners for integrated building projects. We deliver reliable subcontracted trades under a single project umbrella.'},
   // New carpentry image grid entry, aligned with plumbing
