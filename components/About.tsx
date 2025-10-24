@@ -10,9 +10,8 @@ type AboutProps = { hideDuplicateName?: boolean; fullDisplay?: boolean }
 export default function About({ hideDuplicateName = false, fullDisplay = false }: AboutProps) {
   const [lbOpen, setLbOpen] = useState(false)
   const [lbIndex, setLbIndex] = useState(0)
-
   const lbItems: LightboxItem[] = [
-    { src: '/Images/Siyanda Mkhize.jpg', type: 'image', alt: 'Siayanda Mkhize', caption: ['Siayanda Mkhize', 'Founder & Lead Electrician'], position: 'center 40%' },
+    { src: '/Images/Siyanda Mkhize.jpg', type: 'image', alt: 'Siyanda Mkhize', caption: ['Siyanda Mkhize', 'Founder & Lead Electrician'], position: 'center 40%' },
     { src: '/Images/Wife.jpg', type: 'image', alt: 'Co-founder', caption: ['His Lovely Wife', 'Co-founder & operations partner'], position: 'center 45%' }
   ]
 
@@ -38,17 +37,42 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
       </section>
     )
   }
-
   return (
-    <section id="about" className="py-16 max-w-6xl mx-auto px-4">
-      {/* Hero banner */}
-      <div className="rounded overflow-hidden shadow mb-8">
-        <div className="relative h-[36vh] md:h-[44vh] lg:h-[56vh]">
-          <Image src="/Images/pexels-shvetsa-4312849.jpg" alt="Team working" fill className="object-cover" sizes="100vw" style={{ objectPosition: 'center 35%' }} />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-          <div className="absolute left-6 bottom-6 text-white">
-            <h1 className="text-3xl md:text-4xl font-bold">About Ubuhlebusanda Pty Ltd</h1>
-            <p className="mt-2 max-w-xl text-sm md:text-base">Bringing light, power, and reliability to homes and businesses across South Africa. Specializing in professional electrical installations, Lorenzetti products, and solar backup solutions.</p>
+    <section id="about" className="py-20 bg-gray-50 section-divider">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Left: Image and decorative icon */}
+        <div className="relative flex justify-center items-center">
+          {/* Decorative icon */}
+          <div className="absolute -left-10 top-8 hidden md:block">
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="#222" strokeWidth="3">
+                {[...Array(16)].map((_,i)=>(
+                  <line key={i} x1="30" y1="6" x2="30" y2="16" transform={`rotate(${i*22.5} 30 30)`}/>
+                ))}
+              </g>
+              <circle cx="30" cy="30" r="8" fill="#222" />
+            </svg>
+          </div>
+          <Image
+            src="/Images/premium_photo-1671808062726-2a7ffcd6109e.jpg"
+            alt="About Us"
+            width={400}
+            height={500}
+            className="rounded-2xl shadow-xl w-full max-w-md object-cover"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
+        {/* Right: Heading and text */}
+        <div className="flex flex-col justify-center">
+          <h2 className="text-6xl md:text-7xl font-extrabold tracking-tight mb-8 text-gray-900 leading-tight font-heading">ABOUT US</h2>
+          <div className="text-gray-700 text-lg md:text-xl max-w-xl">
+            <p className="mb-6">
+              Ubuhlebusanda started as a small electrical and building services company, aiming to help homeowners and businesses achieve their vision with quality, safety, and care. We soon realized the importance of guiding our clients through every step, from planning to completion, ensuring their needs are met beyond expectations.
+            </p>
+            <p>
+              Today, we offer electrical installations, renovations, plumbing, carpentry, and more—helping our customers create safe, beautiful, and functional spaces. We value our clients above all, and we never settle for &#39;OK&#39;—only excellence.
+            </p>
           </div>
         </div>
       </div>
@@ -75,8 +99,8 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
                     style={{ objectPosition: 'center 40%' }}
                   />
                 </button>
-                <figcaption id="caption-siayanda" className="absolute left-4 bottom-4 bg-white/95 rounded px-3 py-2 backdrop-blur-sm">
-                  <h3 className="text-lg font-semibold">Siayanda Mkhize</h3>
+                <figcaption id="caption-siyanda" className="absolute left-4 bottom-4 bg-white/95 rounded px-3 py-2 backdrop-blur-sm">
+                  <h3 className="text-lg font-semibold">Siyanda Mkhize</h3>
                   <p className="text-xs text-gray-700">Founder & Lead Electrician</p>
                 </figcaption>
               </figure>
@@ -101,7 +125,7 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
                   />
                 </button>
                 <figcaption id="caption-wife" className="absolute left-4 bottom-4 bg-white/95 rounded px-3 py-2 backdrop-blur-sm">
-                  <h3 className="text-lg font-semibold">His Lovely Wife</h3>
+                  <h3 className="text-lg font-semibold">Buhle Mkhize</h3>
                   <p className="text-xs text-gray-700">Co-founder & Operations Partner</p>
                 </figcaption>
               </figure>

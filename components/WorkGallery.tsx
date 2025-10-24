@@ -46,7 +46,7 @@ const sample: MediaItem[] = [
     title: 'Kitchen Renovation', 
     type: 'video', 
     videoSrc: "/videos/ssstik.io_@siyanda_24_1759237904218.mp4",
-    poster: "/Images/bilal-mansuri-TWIeLLm7DPc-unsplash (1).jpg",
+    poster: "/Images/pexels-pixabay-373541.jpg",
     city: 'KwaMashu, Durban',
     description: 'Complete kitchen electrical upgrade with modern lighting and appliance installations.'
   },

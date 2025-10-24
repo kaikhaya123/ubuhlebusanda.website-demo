@@ -35,7 +35,7 @@ export default function ServicesTOC({items}:{items:{slug:string,title:string}[]}
         <ul className="space-y-2">
           {items.map(i => (
             <li key={i.slug}>
-              <a href={`#${i.slug}`} className={`block px-3 py-2 rounded ${active===i.slug ? 'bg-amber-200 font-semibold' : 'text-gray-700'}`}>{i.title}</a>
+              <a href={`#${i.slug}`} className={`block px-3 py-2 rounded transition ${active===i.slug ? 'bg-black text-white font-semibold shadow' : 'bg-white text-black hover:bg-black hover:text-white'}`}>{i.title}</a>
             </li>
           ))}
         </ul>

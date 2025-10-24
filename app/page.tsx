@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="max-w-6xl mx-auto px-6">
+  <section className="max-w-6xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-6 sm:py-10 md:py-14">
         <About hideDuplicateName={true} />
         <Services />
         <WorkGallery />

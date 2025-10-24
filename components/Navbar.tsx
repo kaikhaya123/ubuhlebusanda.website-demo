@@ -130,16 +130,16 @@ export default function Navbar(){
         <div aria-hidden className={`pointer-events-none absolute left-0 right-0 top-0 h-full mix-blend-overlay transition-opacity duration-300 ${showTransparent ? 'opacity-100 bg-gradient-to-r from-black/20 via-black/10 to-transparent' : 'opacity-0'}`} />
   <Link href="/" onClick={handleLogoClick} className="inline-flex items-center gap-3 px-3 py-1 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-300" aria-label="Ubuhlebusanda home">
           <span className="sr-only">Ubuhlebusanda</span>
-          {/* keep navbar height small while visually enlarging the logo */}
-          <div className="relative w-56 md:w-72 h-12 md:h-14 overflow-visible">
+          {/* keep navbar height small while visually enlarging the logo, especially on mobile */}
+          <div className="relative w-56 sm:w-72 md:w-96 h-24 sm:h-20 md:h-24 overflow-visible">
             <div className="absolute inset-0 flex items-center">
-              <div className="w-full h-full overflow-visible -translate-y-1 transform scale-125 md:scale-150">
+              <div className="w-full h-full overflow-visible -translate-y-1 transform scale-[2] sm:scale-[1.7] md:scale-[1.9]">
                 <Image
                   src="/Images/chatgpt-2025-09-29-08-16-40.png"
                   alt="Ubuhlebusanda logo"
                   width={1200}
                   height={360}
-                  sizes="(max-width: 640px) 160px, (max-width: 768px) 200px, 288px"
+                  sizes="(max-width: 640px) 320px, (max-width: 768px) 280px, 384px"
                   priority
                   quality={100}
                   className="w-full h-full object-contain filter contrast-105 saturate-105"
@@ -197,53 +197,53 @@ export default function Navbar(){
       {/* Mobile menu - improved styling and layout */}
       {open && (
         <div className="md:hidden border-t border-white/20" aria-hidden={false}>
-          <div className={`max-w-6xl mx-auto px-6 py-6 flex flex-col gap-4 ${showTransparent ? 'bg-black/80 backdrop-blur-sm' : 'bg-white'}`}>
+          <div className="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-4 bg-white">
               <Link 
                 href="/" 
                 onClick={() => setOpen(false)}
-                className={`${isHome ? 'text-white/90 hover:text-white' : 'text-gray-700 hover:text-gray-900'} text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/' ? (isHome ? 'font-semibold text-white bg-white/10' : 'font-semibold text-amber-600 bg-amber-50') : ''}`}
+                className={`text-black hover:text-gray-900 text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/' ? 'font-semibold bg-gray-100' : ''}`}
               >
                 Home
               </Link>
               <Link 
                 href="/about" 
                 onClick={() => setOpen(false)}
-                className={`${isHome ? 'text-white/90 hover:text-white' : 'text-gray-700 hover:text-gray-900'} text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/about' ? (isHome ? 'font-semibold text-white bg-white/10' : 'font-semibold text-amber-600 bg-amber-50') : ''}`}
+                className={`text-black hover:text-gray-900 text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/about' ? 'font-semibold bg-gray-100' : ''}`}
               >
                 About
               </Link>
               <Link 
                 href="/services" 
                 onClick={() => setOpen(false)}
-                className={`${isHome ? 'text-white/90 hover:text-white' : 'text-gray-700 hover:text-gray-900'} text-lg py-2 px-2 rounded-lg transition-colors ${pathname.startsWith('/services') ? (isHome ? 'font-semibold text-white bg-white/10' : 'font-semibold text-amber-600 bg-amber-50') : ''}`}
+                className={`text-black hover:text-gray-900 text-lg py-2 px-2 rounded-lg transition-colors ${pathname.startsWith('/services') ? 'font-semibold bg-gray-100' : ''}`}
               >
                 Services
               </Link>
               <Link 
                 href="/projects" 
                 onClick={() => setOpen(false)}
-                className={`${isHome ? 'text-white/90 hover:text-white' : 'text-gray-700 hover:text-gray-900'} text-lg py-2 px-2 rounded-lg transition-colors ${pathname.startsWith('/projects') ? (isHome ? 'font-semibold text-white bg-white/10' : 'font-semibold text-amber-600 bg-amber-50') : ''}`}
+                className={`text-black hover:text-gray-900 text-lg py-2 px-2 rounded-lg transition-colors ${pathname.startsWith('/projects') ? 'font-semibold bg-gray-100' : ''}`}
               >
                 Projects
               </Link>
               <Link 
                 href="/#testimonials" 
                 onClick={() => setOpen(false)}
-                className={`${isHome ? 'text-white/90 hover:text-white' : 'text-gray-700 hover:text-gray-900'} text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/' ? (isHome ? 'font-semibold text-white bg-white/10' : 'font-semibold text-amber-600 bg-amber-50') : ''}`}
+                className={`text-black hover:text-gray-900 text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/' ? 'font-semibold bg-gray-100' : ''}`}
               >
                 Testimonials
               </Link>
               <Link 
                 href="/#contact" 
                 onClick={() => setOpen(false)}
-                className={`${isHome ? 'text-white/90 hover:text-white' : 'text-gray-700 hover:text-gray-900'} text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/' ? (isHome ? 'font-semibold text-white bg-white/10' : 'font-semibold text-amber-600 bg-amber-50') : ''}`}
+                className={`text-black hover:text-gray-900 text-lg py-2 px-2 rounded-lg transition-colors ${pathname === '/' ? 'font-semibold bg-gray-100' : ''}`}
               >
                 Contact
               </Link>
               <Link 
                 href="/#contact" 
                 onClick={() => setOpen(false)}
-                className={`${isHome ? 'bg-white/20 text-white border border-white/30' : 'bg-amber-500 text-white border border-amber-500'} inline-block mt-4 px-6 py-3 rounded-lg font-medium text-center transition-all hover:shadow-lg`}
+                className="bg-black text-white border border-black inline-block mt-4 px-6 py-3 rounded-lg font-medium text-center transition-all hover:shadow-lg"
               >
                 Get a Quote
               </Link>

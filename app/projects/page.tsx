@@ -42,9 +42,9 @@ const projects: Project[] = [
     date: '',
     coverImage: '/Images/3_6a3f8f37-ea77-4911-9c98-0ffcb8428cd5.webp',
     images: [
-      '/Images/pexels-eric-mufasa-578798-6349399.jpg',
-      '/Images/istockphoto-2170643829-612x612.jpg',
-      '/Images/closeup-male-electrician-checking-fuse-600nw-2349429843.webp',
+      '/Images/app01.webp',
+      '/Images/4_72982bd1-9ce9-4b87-8844-f14a4ea9dbc5_535x.webp',
+      '/Images/LUXPOWER-SNA-US-12000-Hybrid-Off-Grid-Inverter-1.png',
       '/Images/3_6a3f8f37-ea77-4911-9c98-0ffcb8428cd5.webp'
     ],
     videoUrl: "/videos/ssstik.io_@siyanda_24_1759239017612.mp4",
@@ -65,10 +65,10 @@ const projects: Project[] = [
     date: '',
     coverImage: '/Images/img01.jpg',
     images: [
-      '/Images/Ubuhlebusanda_roof Solar panel.jpg',
-      '/Images/pexels-kindelmedia-8488025.jpg',
-      '/Images/istockphoto-2181440121-612x612.jpg',
-      '/Images/pexels-florida-solar-fix-2154752009-33379361.jpg'
+      '/Images/newpowa-0jf8n9COg6s-unsplash.jpg',
+      '/Images/pexels-cristian-rojas-8853503.jpg',
+      '/Images/pexels-cristian-rojas-8853511.jpg',
+      '/Images/pexels-cristian-rojas-8853540.jpg'
     ],
     videoUrl: "/videos/ssstik.io_@siyanda_24_1759238335036.mp4",
     challenge: 'Optimizing solar panel placement for maximum efficiency in limited roof space.',
@@ -90,8 +90,8 @@ const projects: Project[] = [
     images: [
       '/Images/Lorenzetti Shower Installation.jpg',
       '/Images/Bello-Shower-600x900.webp',
-      '/Images/484274009_1060030022832110_6067769429391287603_n.jpg',
-      '/Images/484807011_1060048006163645_9082220095922664128_n.jpg'
+      '/Images/LOR7698-2-002-scaled.jpg',
+      '/Images/5c014ea2990d1137c97cd9368ae13d9f.jpg'
     ],
     videoUrl: "/videos/snaptik_7346607726019104006_v2.mp4",
     challenge: 'Integrating modern Lorenzetti systems with existing plumbing infrastructure.',
@@ -104,17 +104,17 @@ const projects: Project[] = [
   },
   {
     id: '4',
-    title: 'Complete Home Renovation',
+    title: 'Home Renovation',
     category: 'Renovation',
     description: 'Full-scale home renovation including electrical upgrades, modern lighting, and smart home integration.',
     location: '',
     date: '',
-    coverImage: '/Images/7-Pixabay-1024x683.jpg',
+    coverImage: '/Images/premium_photo-1683121250314-f5e3bb80aa75.avif',
     images: [
-      '/Images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
-      '/Images/pexels-vlada-karpovich-6634838.jpg',
-      '/Images/natalia-menin-kvNXrgbmCGM-unsplash.jpg',
-      '/Images/newpowa-0jf8n9COg6s-unsplash.jpg'
+  '/Images/condos-08.jpg',
+  // '/Images/pexels-vlada-karpovich-6634838.jpg', // Removed: invalid or missing image
+  '/Images/pexels-heyho-6489127.jpg',
+      '/Images/woodupp-tv-mount-akupanel-beige-felt-880x1024.jpg'
     ],
     challenge: 'Modernizing an older home while preserving its character and ensuring all systems meet current safety standards.',
     solution: 'Phased renovation approach with careful planning to maintain structural integrity while upgrading all electrical systems and adding modern amenities.',
@@ -133,12 +133,7 @@ const projects: Project[] = [
     location: '',
     date: '',
     coverImage: '/Images/premium_photo-1681989486976-9ec9d2eac57a.jpeg',
-    images: [
-      '/Images/pexels-cristian-rojas-8853537.jpg',
-      '/Images/closeup-male-electrician-checking-fuse-600nw-2349429843.webp',
-      '/Images/istockphoto-2197665899-612x612.jpg',
-      '/Images/pexels-alex-tyson-919593032-19966749.jpg'
-    ],
+    images: [],
     challenge: 'Building a modern commercial facility from the ground up with comprehensive electrical systems, energy-efficient lighting, and future-ready infrastructure.',
     solution: 'Implemented advanced electrical planning with modular systems, energy-efficient LED lighting throughout, and infrastructure for future technology upgrades.',
     results: [
@@ -179,7 +174,7 @@ export default function ProjectsPage() {
       <HeroSimple
         title="Our Projects"
         sub="Explore our portfolio of successful installations and transformations across South Africa."
-        bg="/Images/pexels-pixabay-356036.jpg"
+        bg="/Images/pexels-bizar-van-jan-92378004-16427010.jpg"
         ctaText="View All Projects"
         ctaHref="#projects"
       />
@@ -368,18 +363,24 @@ export default function ProjectsPage() {
                   </ul>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                  {selectedProject.images.map((image, index) => (
-                    <div key={index} className="relative h-32 md:h-40 rounded-lg overflow-hidden group cursor-pointer">
-                      <Image
-                        src={image}
-                        alt={`Project image ${index + 1}`}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
-                      />
+                {/* Restored bottom project images grid as requested */}
+                {selectedProject.images && selectedProject.images.length > 0 && (
+                  <div>
+                    <h3 className="text-xl font-semibold text-black mb-2">Project Images</h3>
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                      {selectedProject.images.map((img, idx) => (
+                        <div key={idx} className="relative h-40 sm:h-48 rounded-lg overflow-hidden">
+                          <Image
+                            src={img}
+                            alt={`Project image ${idx + 1}`}
+                            fill
+                            className="object-cover"
+                          />
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                )}
               </div>
 
               {/* Mobile-friendly close button */}

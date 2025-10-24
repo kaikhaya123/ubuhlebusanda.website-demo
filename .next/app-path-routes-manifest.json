@@ -1,1 +1,1 @@
-{"/_not-found/page":"/_not-found","/api/contact/route":"/api/contact","/api/contact-test/route":"/api/contact-test","/page":"/","/services/page":"/services","/projects/page":"/projects","/about/page":"/about","/services/[slug]/page":"/services/[slug]"}
+{"/_not-found/page":"/_not-found","/contact/page":"/contact","/api/contact-test/route":"/api/contact-test","/api/contact/route":"/api/contact","/page":"/","/projects/page":"/projects","/test/page":"/test","/services/[slug]/page":"/services/[slug]","/services/page":"/services","/about/page":"/about"}

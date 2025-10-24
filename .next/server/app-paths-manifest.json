@@ -1,10 +1,12 @@
 {
   "/_not-found/page": "app/_not-found/page.js",
-  "/api/contact/route": "app/api/contact/route.js",
+  "/contact/page": "app/contact/page.js",
   "/api/contact-test/route": "app/api/contact-test/route.js",
+  "/api/contact/route": "app/api/contact/route.js",
   "/page": "app/page.js",
-  "/services/page": "app/services/page.js",
   "/projects/page": "app/projects/page.js",
-  "/about/page": "app/about/page.js",
-  "/services/[slug]/page": "app/services/[slug]/page.js"
+  "/test/page": "app/test/page.js",
+  "/services/[slug]/page": "app/services/[slug]/page.js",
+  "/services/page": "app/services/page.js",
+  "/about/page": "app/about/page.js"
 }

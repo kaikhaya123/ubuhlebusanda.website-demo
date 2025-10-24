@@ -14,10 +14,10 @@ type ProjectItem = {
 
 const demo: ProjectItem[] = [
   { id: 'p1', title: '', type: 'image', img: '/Images/484274009_1060030022832110_6067769429391287603_n.jpg' },
-  { id: 'p2', title: '', type: 'image', img: '/Images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg' },
+  { id: 'p2', title: '', type: 'image', img: '/Images/pexels-heyho-6489127.jpg' },
   { id: 'p3', title: '', type: 'video', videoSrc: '/videos/ssstik.io_@ubuhlebusanda_1759241752304.mp4'},
-  { id: 'p4', title: '', type: 'image', img: '/Images/Ubuhlebusanda_roof Solar panel.jpg' },
-  { id: 'p5', title: '', type: 'image', img: '/Images/pexels-vlada-karpovich-6634838.jpg' },
+  { id: 'p4', title: '', type: 'image', img: '/Images/pexels-florida-solar-fix-2154752009-33379364.jpg' },
+  { id: 'p5', title: '', type: 'image', img: '/Images/tv-wall-simple-1024x683.png' },
   { id: 'p6', title: '', type: 'video', videoSrc: '/videos/ssstik.io_@siyanda_24_1759243059783.mp4' },
 ]
 

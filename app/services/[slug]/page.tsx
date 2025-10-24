@@ -1,41 +1,37 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import { getServiceBySlug, services } from '../../../lib/services'
 
-export async function generateStaticParams(){
-  return services.map(s => ({ slug: s.slug }))
-}
+import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
+import { services } from '../../../lib/services';
 
-export default function ServiceDetail({ params }:{ params:{ slug:string } }){
-  const s = getServiceBySlug(params.slug)
-  if (!s) return <main className="p-8">Service not found</main>
+export default function ServiceDetailPage({ params }: { params: { slug: string } }) {
+  const slug = params.slug;
+  const service = services.find(s => s.slug === slug);
+
+  if (!service) return notFound();
 
   return (
-    <main className="max-w-4xl mx-auto px-6 py-16">
-      <header className="mb-8">
-        <h1 className="text-3xl font-bold">{s.title}</h1>
-        <p className="mt-2 text-gray-700">{s.desc}</p>
-      </header>
-
-      <div className="relative h-72 w-full mb-6 rounded-lg overflow-hidden">
-        <Image src={s.img} alt={s.title} fill className="object-cover" />
+    <main className="max-w-3xl mx-auto px-4 py-12 min-h-screen flex flex-col items-center">
+      <div className="w-full mb-8 rounded-2xl overflow-hidden shadow-xl relative h-64">
+        <Image
+          src={service.img}
+          alt={service.title}
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
       </div>
-
-      <article className="prose prose-neutral">
-        <p>{s.desc} We provide certified technicians, compliant parts, and end-to-end project management. Our team handles permits, testing, and handover documentation.</p>
-        <p>Typical deliverables include:</p>
-        <ul>
-          <li>Detailed site assessment and risk report</li>
-          <li>Electrical layout and circuit schedules</li>
-          <li>Supply of materials and installation by certified electricians</li>
-          <li>Testing and compliance certificates</li>
-        </ul>
-      </article>
-
-      <div className="mt-8">
-        <Link href="/contact" className="btn-glass btn-glass--warm">Request a Quote</Link>
-        <Link href="/services" className="ml-4 text-sm text-gray-600">Back to services</Link>
+      <h1 className="text-4xl font-extrabold mb-4 text-center">{service.title}</h1>
+      <p className="text-lg text-gray-700 mb-8 text-center max-w-2xl">{service.desc}</p>
+      <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md mx-auto">
+        <Link href={`/contact?service=${encodeURIComponent(service.title)}`} className="px-6 py-3 rounded-xl bg-black text-white shadow-xl transition-all font-serif font-extrabold tracking-wide text-lg border-none focus:outline-none focus-visible:ring-2 focus-visible:ring-white w-full text-center">
+          Request a Quote
+        </Link>
+        <Link href="/services" className="px-6 py-3 rounded-xl bg-white border-2 border-gray-900 text-gray-900 shadow-xl hover:bg-gray-900 hover:text-white transition-all font-serif font-extrabold tracking-wide text-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-900 w-full text-center">
+          Back to Services
+        </Link>
       </div>
     </main>
-  )
+  );
 }

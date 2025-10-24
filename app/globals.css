@@ -23,16 +23,16 @@ html {
 		height:100%;
 	}
 	body{
-			@apply bg-white text-black leading-relaxed;
-			font-family: var(--font-body);
-			/* Improve touch scrolling on mobile */
-			-webkit-overflow-scrolling: touch;
+		color: #000;
+		background: #fff;
+		line-height: 1.625;
+		font-family: var(--font-body);
+		/* Improve touch scrolling on mobile */
+		-webkit-overflow-scrolling: touch;
 	}
 	
 	/* Better mobile touch targets */
-	button, a {
-		@apply touch-manipulation;
-	}
+	/* Remove invalid @apply usage. Use utility classes in JSX/TSX. */
 	
 	/* Prevent zoom on inputs for iOS */
 	input, select, textarea {
