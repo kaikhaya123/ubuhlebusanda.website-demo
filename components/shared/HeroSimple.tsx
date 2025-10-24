@@ -7,7 +7,7 @@ export default function HeroSimple({
   sub = 'Ubuhlebusanda Pty Ltd delivers trusted electrical installations and Lorenzetti product solutions across South Africa.',
   ctaText = 'Get a Quote',
   ctaHref = '#contact',
-  bg = '/Images/pexels-lisa-anna-901356985-19866477.jpg'
+  bg = '/images/pexels-lisa-anna-901356985-19866477.jpg'
 }: {
   title?: string
   sub?: string

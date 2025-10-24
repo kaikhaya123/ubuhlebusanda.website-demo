@@ -65,7 +65,7 @@ export default function HeroDiagonalSplit() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/Images/pexels-lisa-anna-901356985-19866477.jpg"
+              src="/images/pexels-lisa-anna-901356985-19866477.jpg"
               alt="Residential electrical services"
               fill
               priority
@@ -169,7 +169,7 @@ export default function HeroDiagonalSplit() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <Image
-              src="/Images/pexels-tima-miroshnichenko-7033665.jpg"
+              src="/images/pexels-tima-miroshnichenko-7033665.jpg"
               alt="Commercial electrical services"
               fill
               quality={90}
@@ -263,7 +263,7 @@ export default function HeroDiagonalSplit() {
           {/* Residential (Top Half) */}
           <div className="h-1/2 relative overflow-hidden">
             <Image
-              src="/Images/pexels-lisa-anna-901356985-19866477.jpg"
+              src="/images/pexels-lisa-anna-901356985-19866477.jpg"
               alt="Residential"
               fill
               className="object-cover"
@@ -286,7 +286,7 @@ export default function HeroDiagonalSplit() {
           {/* Commercial (Bottom Half) */}
           <div className="h-1/2 relative overflow-hidden border-t-4 border-amber-500">
             <Image
-              src="/Images/pexels-tima-miroshnichenko-7033665.jpg"
+              src="/images/pexels-tima-miroshnichenko-7033665.jpg"
               alt="Commercial"
               fill
               className="object-cover"

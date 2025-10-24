@@ -40,11 +40,11 @@ const projects: Project[] = [
     description: 'Complete electrical system installation for a modern residential complex.',
     location: '',
     date: '',
-    coverImage: '/Images/3_6a3f8f37-ea77-4911-9c98-0ffcb8428cd5.webp',
+  coverImage: '/images/3_6a3f8f37-ea77-4911-9c98-0ffcb8428cd5.webp',
     images: [
-      '/Images/app01.webp',
-      '/Images/4_72982bd1-9ce9-4b87-8844-f14a4ea9dbc5_535x.webp',
-      '/Images/LUXPOWER-SNA-US-12000-Hybrid-Off-Grid-Inverter-1.png',
+  '/images/app01.webp',
+  '/images/4_72982bd1-9ce9-4b87-8844-f14a4ea9dbc5_535x.webp',
+  '/images/LUXPOWER-SNA-US-12000-Hybrid-Off-Grid-Inverter-1.png',
       '/Images/3_6a3f8f37-ea77-4911-9c98-0ffcb8428cd5.webp'
     ],
     videoUrl: "/videos/ssstik.io_@siyanda_24_1759239017612.mp4",

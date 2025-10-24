@@ -11,8 +11,8 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
   const [lbOpen, setLbOpen] = useState(false)
   const [lbIndex, setLbIndex] = useState(0)
   const lbItems: LightboxItem[] = [
-    { src: '/Images/Siyanda Mkhize.jpg', type: 'image', alt: 'Siyanda Mkhize', caption: ['Siyanda Mkhize', 'Founder & Lead Electrician'], position: 'center 40%' },
-    { src: '/Images/Wife.jpg', type: 'image', alt: 'Co-founder', caption: ['His Lovely Wife', 'Co-founder & operations partner'], position: 'center 45%' }
+  { src: '/images/Siyanda Mkhize.jpg', type: 'image', alt: 'Siyanda Mkhize', caption: ['Siyanda Mkhize', 'Founder & Lead Electrician'], position: 'center 40%' },
+  { src: '/images/Wife.jpg', type: 'image', alt: 'Co-founder', caption: ['His Lovely Wife', 'Co-founder & operations partner'], position: 'center 45%' }
   ]
 
   // Compact teaser for homepage
@@ -22,7 +22,7 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <div className="w-full overflow-hidden rounded shadow">
-              <Image src="/Images/chatgpt-2025-09-29-08-16-40.png" alt="Team at work" width={1200} height={800} className="w-full h-auto object-cover" />
+              <Image src="/images/chatgpt-2025-09-29-08-16-40.png" alt="Team at work" width={1200} height={800} className="w-full h-auto object-cover" />
             </div>
           </div>
           <div>
@@ -54,7 +54,7 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
             </svg>
           </div>
           <Image
-            src="/Images/premium_photo-1671808062726-2a7ffcd6109e.jpg"
+            src="/images/premium_photo-1671808062726-2a7ffcd6109e.jpg"
             alt="About Us"
             width={400}
             height={500}
@@ -91,7 +91,7 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
                   onClick={() => { setLbIndex(0); setLbOpen(true) }}
                 >
                   <Image
-                    src="/Images/Siyanda Mkhize.jpg"
+                    src="/images/Siyanda Mkhize.jpg"
                     alt="Siayanda Mkhize"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105 group-focus:scale-105"
@@ -116,7 +116,7 @@ export default function About({ hideDuplicateName = false, fullDisplay = false }
                   onClick={() => { setLbIndex(1); setLbOpen(true) }}
                 >
                   <Image
-                    src="/Images/Wife.jpg"
+                    src="/images/Wife.jpg"
                     alt="Co-founder"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105 group-focus:scale-105"

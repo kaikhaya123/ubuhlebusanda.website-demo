@@ -19,7 +19,7 @@ const sample: MediaItem[] = [
     title: 'Electrical Installation', 
     type: 'video', 
     videoSrc: "/videos/ssstik.io_@siyanda_24_1759239017612.mp4",
-    poster: "/Images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg",
+  poster: "/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg",
     city: 'Durban',
     description: 'Professional electrical installation with complete safety compliance and aftercare support.'
   },
@@ -28,7 +28,7 @@ const sample: MediaItem[] = [
     title: 'Solar Panel Installation', 
     type: 'video', 
     videoSrc: "/videos/ssstik.io_@siyanda_24_1759238335036.mp4",
-    poster: "/Images/pexels-kindelmedia-8488025.jpg",
+  poster: "/images/pexels-kindelmedia-8488025.jpg",
     city: 'Trenchgula Guest Lodge',
     description: '50kW solar system installation providing sustainable energy solutions.'
   },
@@ -37,7 +37,7 @@ const sample: MediaItem[] = [
     title: 'Lorenzetti Supply & Install', 
     type: 'video', 
     videoSrc: "/videos/snaptik_7346607726019104006_v2.mp4",
-    poster: "/Images/pexels-tima-miroshnichenko-7033665.jpg",
+  poster: "/images/pexels-tima-miroshnichenko-7033665.jpg",
     city: 'Durban',
     description: 'Premium Lorenzetti water heating solutions with professional installation.'
   },
@@ -46,7 +46,7 @@ const sample: MediaItem[] = [
     title: 'Kitchen Renovation', 
     type: 'video', 
     videoSrc: "/videos/ssstik.io_@siyanda_24_1759237904218.mp4",
-    poster: "/Images/pexels-lisa-anna-901356985-19866477.jpg",
+  poster: "/images/pexels-lisa-anna-901356985-19866477.jpg",
     city: 'KwaMashu, Durban',
     description: 'Complete kitchen electrical upgrade with modern lighting and appliance installations.'
   },
@@ -128,7 +128,7 @@ export default function WorkGallery({ items = sample }: { items?: MediaItem[] })
               </div>
             ) : (
               <Image
-                src={activeProject.img || activeProject.poster || '/Images/placeholder.jpg'}
+                src={activeProject.img || activeProject.poster || '/images/placeholder.jpg'}
                 alt={activeProject.title}
                 fill
                 className="object-cover"
@@ -217,7 +217,7 @@ export default function WorkGallery({ items = sample }: { items?: MediaItem[] })
                     {project.type === 'video' ? (
                       <div className="relative w-full h-full bg-black">
                         <Image
-                          src={project.poster || '/Images/placeholder.jpg'}
+                          src={project.poster || '/images/placeholder.jpg'}
                           alt={project.title}
                           fill
                           className="object-cover"
@@ -233,7 +233,7 @@ export default function WorkGallery({ items = sample }: { items?: MediaItem[] })
                       </div>
                     ) : (
                       <Image
-                        src={project.img || project.poster || '/Images/placeholder.jpg'}
+                        src={project.img || project.poster || '/images/placeholder.jpg'}
                         alt={project.title}
                         fill
                         className="object-cover"

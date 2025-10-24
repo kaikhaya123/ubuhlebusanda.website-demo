@@ -10,7 +10,7 @@ export default function ServicesPage(){
       <div className="relative mb-16 w-screen left-1/2 right-1/2 -translate-x-1/2" style={{height: '320px', minHeight: '320px'}}>
         {/* Custom hero background image: replace src with your own image path */}
         <Image
-          src="/Images/pexels-rezwan-1216544.jpg"
+          src="/images/pexels-rezwan-1216544.jpg"
           alt="Hero Background"
           fill
           className="absolute inset-0 w-full h-full object-cover opacity-60"

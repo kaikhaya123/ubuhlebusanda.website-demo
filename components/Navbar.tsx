@@ -135,7 +135,7 @@ export default function Navbar(){
             <div className="absolute inset-0 flex items-center">
               <div className="w-full h-full overflow-visible -translate-y-1 transform scale-[2] sm:scale-[1.7] md:scale-[1.9]">
                 <Image
-                  src="/Images/chatgpt-2025-09-29-08-16-40.png"
+                  src="/images/chatgpt-2025-09-29-08-16-40.png"
                   alt="Ubuhlebusanda logo"
                   width={1200}
                   height={360}

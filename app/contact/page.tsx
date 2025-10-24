@@ -61,7 +61,7 @@ export default function ContactPage() {
     <main className="min-h-screen bg-gray-50 text-black">
       {/* Hero Banner */}
       <section className="w-full relative py-12 px-4 flex flex-col items-center justify-center text-center" style={{minHeight: '320px'}}>
-        <Image src="/Images/pexels-karola-g-6345304.jpg" alt="Contact Hero Background" fill priority className="object-cover z-0" />
+  <Image src="/images/pexels-karola-g-6345304.jpg" alt="Contact Hero Background" fill priority className="object-cover z-0" />
         <div className="absolute inset-0" />
         <div className="relative z-20 flex flex-col items-center justify-center text-center w-full">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 tracking-tight">Get In Touch</h1>

@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
         transition={{ duration: 0.7, delay: 0.2, ease: 'easeOut' }}
       >
         <div className="w-full rounded shadow relative h-64 md:h-80">
-          <Image src="/Images/hurley-david-ac-technician-min-1.jpg" alt="Why choose us" fill className="object-cover rounded" />
+          <Image src="/images/hurley-david-ac-technician-min-1.jpg" alt="Why choose us" fill className="object-cover rounded" />
         </div>
       </motion.div>
     </motion.section>

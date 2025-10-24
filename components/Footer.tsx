@@ -18,7 +18,7 @@ export default function Footer(){
         <div className="flex items-center gap-3">
           <div className="flex-shrink-0 w-20 md:w-40">
             <Image
-              src="/Images/chatgpt-2025-09-29-08-16-40.png"
+              src="/images/chatgpt-2025-09-29-08-16-40.png"
               alt="Ubuhlebusanda logo"
               width={280}
               height={84}
