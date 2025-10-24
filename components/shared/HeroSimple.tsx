@@ -40,7 +40,7 @@ export default function HeroSimple({
   }
   
   return (
-    <section id="hero" className="relative h-[60vh] sm:h-[70vh] md:h-screen w-full overflow-hidden" suppressHydrationWarning>
+    <section id="hero" className="relative h-[70vh] sm:h-[80vh] md:h-screen w-full overflow-hidden pt-[var(--nav-height,64px)]" suppressHydrationWarning>
       <div className="absolute inset-0 -z-10" suppressHydrationWarning>
         <Image 
           src={bg} 
@@ -52,11 +52,11 @@ export default function HeroSimple({
           unoptimized
         />
       </div>
-      
+
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/20" />
-      
-      <div className="relative z-10 w-full h-full px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-center items-center md:items-start pt-20 md:pt-24" suppressHydrationWarning>
-        <div className="py-8 sm:py-6 md:py-0 w-full max-w-2xl mx-auto md:mx-0 text-center md:text-left">
+
+      <div className="relative z-10 w-full h-full px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-center items-center md:items-start py-8 sm:py-12 md:py-0" suppressHydrationWarning>
+        <div className="w-full max-w-2xl mx-auto md:mx-0 text-center md:text-left flex flex-col justify-center h-full">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-4">{title}</h1>
           <p className="mt-4 text-base sm:text-lg text-white/90 max-w-xl mx-auto md:mx-0 leading-relaxed">{sub}</p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
