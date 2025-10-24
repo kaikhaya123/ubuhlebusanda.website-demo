@@ -1,3 +1,4 @@
+"use client"
 // Helper component to load Lottie animation from public folder
 function SuccessLottie() {
   const [animationData, setAnimationData] = React.useState<any>(null);
