@@ -1,5 +1,8 @@
+"use client"
 import React, { useState, useEffect, useRef } from 'react'
-
+import { UserIcon, EnvelopeIcon, PencilSquareIcon, PhoneIcon, MapPinIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
+import { motion, AnimatePresence } from 'framer-motion'
+import Lottie from 'react-lottie-player'
 
 // Helper component to load Lottie animation from public folder
 function SuccessLottie() {
@@ -28,11 +31,6 @@ function SuccessLottie() {
     </motion.div>
   );
 }
-import { UserIcon, EnvelopeIcon, PencilSquareIcon, PhoneIcon, MapPinIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
-import { motion, AnimatePresence } from 'framer-motion'
-import Lottie from 'react-lottie-player'
-
-// Next.js: load Lottie animation from public folder at runtime
 
 export default function Contact(){
   // Form state
