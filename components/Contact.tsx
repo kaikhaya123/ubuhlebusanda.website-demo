@@ -1,9 +1,37 @@
+// Helper component to load Lottie animation from public folder
+function SuccessLottie() {
+  const [animationData, setAnimationData] = React.useState<any>(null);
+  React.useEffect(() => {
+    fetch('/lottie/Email Sent.json')
+      .then(res => res.json())
+      .then(setAnimationData)
+      .catch(() => setAnimationData(null));
+  }, []);
+  if (!animationData) return null;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: 20 }}
+      transition={{ duration: 0.4 }}
+      className="mt-4 flex flex-col items-center justify-center p-3 bg-green-50 text-green-800 rounded shadow"
+    >
+      <Lottie
+        animationData={animationData}
+        play
+        style={{ width: 80, height: 80, marginBottom: 8 }}
+      />
+      <span>Message sent — thank you.</span>
+    </motion.div>
+  );
+}
 "use client"
 import React, { useState, useEffect, useRef } from 'react'
 import { UserIcon, EnvelopeIcon, PencilSquareIcon, PhoneIcon, MapPinIcon, BuildingOffice2Icon } from '@heroicons/react/24/outline'
 import { motion, AnimatePresence } from 'framer-motion'
 import Lottie from 'react-lottie-player'
-import emailSentAnimation from '../Public/lottie/Email Sent.json'
+
+// Next.js: load Lottie animation from public folder at runtime
 
 export default function Contact(){
   // Form state
@@ -139,20 +167,7 @@ export default function Contact(){
           {/* Success Lottie animation with auto-dismiss */}
           <AnimatePresence>
             {status==='success' && (
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 20 }}
-                transition={{ duration: 0.4 }}
-                className="mt-4 flex flex-col items-center justify-center p-3 bg-green-50 text-green-800 rounded shadow"
-              >
-                <Lottie
-                  animationData={emailSentAnimation}
-                  play
-                  style={{ width: 80, height: 80, marginBottom: 8 }}
-                />
-                <span>Message sent — thank you.</span>
-              </motion.div>
+              <SuccessLottie />
             )}
           </AnimatePresence>
         </form>
